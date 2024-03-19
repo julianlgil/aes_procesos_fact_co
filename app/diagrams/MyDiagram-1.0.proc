@@ -1040,7 +1040,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_y5quUN3CEe6A-_g1LPjmoQ" name="Middle-Office" actor="_3BWVYN3CEe6A-_g1LPjmoQ">
-        <elements xmi:type="process:ScriptTask" xmi:id="_aAaQIOWhEe6lEOjnwGIrsQ" name="Gestionar cotizacion" outgoing="_Ef9aIN3EEe6A-_g1LPjmoQ" incoming="_HW5AcN3DEe6A-_g1LPjmoQ">
+        <elements xmi:type="process:ScriptTask" xmi:id="_aAaQIOWhEe6lEOjnwGIrsQ" name="Gestionar cotizacion1" outgoing="_Ef9aIN3EEe6A-_g1LPjmoQ" incoming="_HW5AcN3DEe6A-_g1LPjmoQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_HW4ZYd3DEe6A-_g1LPjmoQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_HW4ZYN3DEe6A-_g1LPjmoQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_HW4ZYt3DEe6A-_g1LPjmoQ" name="" content="" returnTypeFixed="true"/>
@@ -1800,14 +1800,14 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_y5r8dt3CEe6A-_g1LPjmoQ" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_aAcFWOWhEe6lEOjnwGIrsQ" type="3028" element="_aAaQIOWhEe6lEOjnwGIrsQ" fontName="Ubuntu" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_aAcsYeWhEe6lEOjnwGIrsQ" type="5018"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aAcsYOWhEe6lEOjnwGIrsQ" x="1999" y="25" width="118" height="58"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aAcsYOWhEe6lEOjnwGIrsQ" x="1999" y="51" width="120" height="60"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_y5r8cd3CEe6A-_g1LPjmoQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_y5r8ct3CEe6A-_g1LPjmoQ" fontName="Ubuntu"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_y5r8c93CEe6A-_g1LPjmoQ"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_y5r8d93CEe6A-_g1LPjmoQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y5r8dN3CEe6A-_g1LPjmoQ" x="23" y="903" width="2499" height="135"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y5r8dN3CEe6A-_g1LPjmoQ" x="48" y="903" width="3652" height="179"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_XSIQ8N3KEe6A-_g1LPjmoQ" type="3007" element="_XSHp4N3KEe6A-_g1LPjmoQ">
           <children xmi:type="notation:DecorationNode" xmi:id="_XSIQ9d3KEe6A-_g1LPjmoQ" type="5007"/>
