@@ -83,6 +83,159 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_LG-4cd13Ee6nkMC4TSw0rw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_LG-4cN13Ee6nkMC4TSw0rw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_LG-4ct13Ee6nkMC4TSw0rw" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:JavaObjectData" xmi:id="_r0GpAOvoEe6Zjbzab2JRnQ" name="error" dataType="_H09rd9z5Ee60Ofbu4xaVyA" className="java.util.List">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_r0GpAevoEe6Zjbzab2JRnQ" content="" returnType="java.util.List"/>
+          </data>
+          <connectors xmi:type="process:Connector" xmi:id="_he3I8OvnEe6Zjbzab2JRnQ" name="update_oportunity" definitionId="salesforce-updatesobject" event="ON_ENTER" definitionVersion="1.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_he3I8evnEe6Zjbzab2JRnQ" definitionId="salesforce-updatesobject" version="1.0.1" modelVersion="8">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I8uvnEe6Zjbzab2JRnQ" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I8-vnEe6Zjbzab2JRnQ" name="julianlgil-sbvu@force.com" content="julianlgil-sbvu@force.com"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I9OvnEe6Zjbzab2JRnQ" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I9evnEe6Zjbzab2JRnQ" name="Salesforce.123" content="Salesforce.123"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I9uvnEe6Zjbzab2JRnQ" key="securityToken">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I9-vnEe6Zjbzab2JRnQ" name="zq2PMlXrLp3yTgIqX4JcvJh32" content="zq2PMlXrLp3yTgIqX4JcvJh32"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I-OvnEe6Zjbzab2JRnQ" key="authEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I-evnEe6Zjbzab2JRnQ" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I-uvnEe6Zjbzab2JRnQ" key="serviceEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I--vnEe6Zjbzab2JRnQ" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I_OvnEe6Zjbzab2JRnQ" key="restEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I_evnEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3I_uvnEe6Zjbzab2JRnQ" key="proxyHost">
+                <expression xmi:type="expression:Expression" xmi:id="_he3I_-vnEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JAOvnEe6Zjbzab2JRnQ" key="proxyPort">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JAevnEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JAuvnEe6Zjbzab2JRnQ" key="proxyUsername">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JA-vnEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JBOvnEe6Zjbzab2JRnQ" key="proxyPassword">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JBevnEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JBuvnEe6Zjbzab2JRnQ" key="connectionTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JB-vnEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JCOvnEe6Zjbzab2JRnQ" key="readTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JCevnEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JCuvnEe6Zjbzab2JRnQ" key="sObjectType">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JC-vnEe6Zjbzab2JRnQ" name="Opportunity" content="Opportunity" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JDOvnEe6Zjbzab2JRnQ" key="sObjectId">
+                <expression xmi:type="expression:Expression" xmi:id="_he3JDevnEe6Zjbzab2JRnQ" name="006Kb00000KYVI0IAP" content="006Kb00000KYVI0IAP" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_he3JDuvnEe6Zjbzab2JRnQ" key="fieldValues">
+                <expression xmi:type="expression:TableExpression" xmi:id="_he3JD-vnEe6Zjbzab2JRnQ">
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_he3JEOvnEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_he3JEevnEe6Zjbzab2JRnQ" name="StageName" content="StageName"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_he3JEuvnEe6Zjbzab2JRnQ" name="Closed Won" content="Closed Won"/>
+                  </expressions>
+                </expression>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_he3JE-vnEe6Zjbzab2JRnQ">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_he3JFOvnEe6Zjbzab2JRnQ" name="proceso_validacion_completo" content="proceso_validacion_completo" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
+                <referencedElements xmi:type="process:Data" xmi:id="_he3JFevnEe6Zjbzab2JRnQ" name="proceso_validacion_completo" dataType="_H09rcdz5Ee60Ofbu4xaVyA"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_he3JFuvnEe6Zjbzab2JRnQ" name="newScript()" content="saveResult.isSuccess()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+                <referencedElements xmi:type="definition:Output" xmi:id="_he3JF-vnEe6Zjbzab2JRnQ" name="saveResult" type="com.sforce.soap.partner.SaveResult"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_he3JGOvnEe6Zjbzab2JRnQ" type="ASSIGNMENT"/>
+            </outputs>
+          </connectors>
+          <connectors xmi:type="process:Connector" xmi:id="_nQsn4OvrEe6Zjbzab2JRnQ" name="crear operacion" definitionId="salesforce-createsobject" event="ON_ENTER" definitionVersion="1.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_nQtO8OvrEe6Zjbzab2JRnQ" definitionId="salesforce-createsobject" version="1.0.1" modelVersion="8">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO8evrEe6Zjbzab2JRnQ" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO8uvrEe6Zjbzab2JRnQ" name="julianlgil-sbvu@force.com" content="julianlgil-sbvu@force.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO8-vrEe6Zjbzab2JRnQ" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO9OvrEe6Zjbzab2JRnQ" name="Salesforce.123" content="Salesforce.123" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO9evrEe6Zjbzab2JRnQ" key="securityToken">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO9uvrEe6Zjbzab2JRnQ" name="zq2PMlXrLp3yTgIqX4JcvJh32" content="zq2PMlXrLp3yTgIqX4JcvJh32" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO9-vrEe6Zjbzab2JRnQ" key="authEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO-OvrEe6Zjbzab2JRnQ" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO-evrEe6Zjbzab2JRnQ" key="serviceEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO-uvrEe6Zjbzab2JRnQ" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO--vrEe6Zjbzab2JRnQ" key="restEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO_OvrEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO_evrEe6Zjbzab2JRnQ" key="proxyHost">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtO_uvrEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtO_-vrEe6Zjbzab2JRnQ" key="proxyPort">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPAOvrEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPAevrEe6Zjbzab2JRnQ" key="proxyUsername">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPAuvrEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPA-vrEe6Zjbzab2JRnQ" key="proxyPassword">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPBOvrEe6Zjbzab2JRnQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPBevrEe6Zjbzab2JRnQ" key="connectionTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPBuvrEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPB-vrEe6Zjbzab2JRnQ" key="readTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPCOvrEe6Zjbzab2JRnQ" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPCevrEe6Zjbzab2JRnQ" key="sObjectType">
+                <expression xmi:type="expression:Expression" xmi:id="_nQtPCuvrEe6Zjbzab2JRnQ" name="Opportunity" content="Opportunity" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nQtPC-vrEe6Zjbzab2JRnQ" key="fieldValues">
+                <expression xmi:type="expression:TableExpression" xmi:id="_nQtPDOvrEe6Zjbzab2JRnQ">
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_ev2g0OvuEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_ev2g0evuEe6Zjbzab2JRnQ" name="Name" content="Name"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_ev2g0uvuEe6Zjbzab2JRnQ" name="Prueba1" content="Prueba1"/>
+                  </expressions>
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_yq-rIOvxEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rIevxEe6Zjbzab2JRnQ" name="AccountId" content="AccountId"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rIuvxEe6Zjbzab2JRnQ" name="001Kb00001IQtW9IAL" content="001Kb00001IQtW9IAL"/>
+                  </expressions>
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_yq-rI-vxEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rJOvxEe6Zjbzab2JRnQ" name="StageName" content="StageName"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rJevxEe6Zjbzab2JRnQ" name="Qualify" content="Qualify"/>
+                  </expressions>
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_yq-rJuvxEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rJ-vxEe6Zjbzab2JRnQ" name="CloseDate" content="CloseDate"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rKOvxEe6Zjbzab2JRnQ" name="newScript()" content="return new Date()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+                  </expressions>
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_yq-rKevxEe6Zjbzab2JRnQ">
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rKuvxEe6Zjbzab2JRnQ" name="Amount" content="Amount"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_yq-rK-vxEe6Zjbzab2JRnQ" name="12345678" content="12345678"/>
+                  </expressions>
+                </expression>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_nQtPGevrEe6Zjbzab2JRnQ">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_nQtPGuvrEe6Zjbzab2JRnQ" name="proceso_validacion_completo" content="proceso_validacion_completo" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
+                <referencedElements xmi:type="process:Data" xmi:id="_nQtPG-vrEe6Zjbzab2JRnQ" name="proceso_validacion_completo" dataType="_H09rcdz5Ee60Ofbu4xaVyA"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_nQtPHOvrEe6Zjbzab2JRnQ" name="newScript()" content="saveResult.isSuccess()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+                <referencedElements xmi:type="definition:Output" xmi:id="_nQtPHevrEe6Zjbzab2JRnQ" name="saveResult" type="com.sforce.soap.partner.SaveResult"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_nQtPHuvrEe6Zjbzab2JRnQ" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="_nQtPH-vrEe6Zjbzab2JRnQ">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_nQtPIOvrEe6Zjbzab2JRnQ" name="error" content="error" type="TYPE_VARIABLE" returnType="java.util.List">
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_nQtPIevrEe6Zjbzab2JRnQ" name="error" dataType="_H09rd9z5Ee60Ofbu4xaVyA" className="java.util.List"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_nQtPIuvrEe6Zjbzab2JRnQ" name="newScript()" content="saveResult.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="definition:Output" xmi:id="_nQtPI-vrEe6Zjbzab2JRnQ" name="saveResult" type="com.sforce.soap.partner.SaveResult"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_nQtPJOvrEe6Zjbzab2JRnQ" type="JAVA_METHOD" expression="add">
+                <inputTypes>java.lang.Object</inputTypes>
+              </operator>
+            </outputs>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_KTMOlt14Ee6nkMC4TSw0rw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_KTMOl914Ee6nkMC4TSw0rw" name="operacion" content="operacion" type="TYPE_VARIABLE" returnType="com.fourj.model.Operacion">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KTMOmN14Ee6nkMC4TSw0rw" name="operacion" dataType="_H09redz5Ee60Ofbu4xaVyA" className="com.fourj.model.Operacion"/>
